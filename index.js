@@ -29,6 +29,7 @@ function ForkReboot(apps, data) {
 }
 
 function Fork(apps) {
+    let idChild = child.pid
     WriteChildData(apps, idChild, 1);
 
     child.send();
