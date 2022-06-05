@@ -1,0 +1,8 @@
+{
+    "website": {
+        "executable": true
+    },
+    "fork": {
+        "executable": true
+    }
+}

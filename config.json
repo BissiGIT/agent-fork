@@ -1,6 +1,6 @@
 {
-    "version": "0.0.1",
-    "build": "B100",
+    "version": "0.0.2",
+    "build": "B101",
     "description": "Service permettant le lancement des modules",
     "name": "Fork"
 }
