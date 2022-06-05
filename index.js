@@ -29,6 +29,11 @@ function ForkReboot(apps, data) {
 }
 
 function Fork(apps) {
+    // Création de la variable child
+    const child = fork('modules/agent-' + apps + '/index.js');
+    // Indication que le module est allumé dans la console
+    console.log("Module " + apps + " initialisé || Node:" + child.pid);
+    // UPDATE OR CREATE JSON
     let idChild = child.pid
     WriteChildData(apps, idChild, 1);
 
