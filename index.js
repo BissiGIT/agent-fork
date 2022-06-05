@@ -36,8 +36,6 @@ function Fork(apps) {
     // UPDATE OR CREATE JSON
     let idChild = child.pid
     WriteChildData(apps, idChild, 1);
-
-    child.send();
     // En cas de fermeture du NODE ---
     child.on("close", function(code) {
         console.log("Alerte - Module arrêté || Code: " + code);
